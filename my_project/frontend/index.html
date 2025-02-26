@@ -10,126 +10,126 @@
 <body class="page">
     <div class="page__background"></div>
     
-    <div class="login-container">
-        <div class="login-card" id="loginCard">
-            <!-- Parte frontal (login) - Conservamos exactamente el diseño original -->
-            <div class="login-card__front login">
-                <div class="login__logo">
-                    <img src="./IMG/32A90059-EE8B-4689-A398-D08AC03A1AC6.jpeg" alt="Motive Homecare Logo" class="login__logo-img">
+    <div class="auth">
+        <div class="auth__card" id="loginCard">
+            <!-- Parte frontal (login) -->
+            <div class="auth__card-front">
+                <div class="auth__logo">
+                    <img src="./IMG/32A90059-EE8B-4689-A398-D08AC03A1AC6.jpeg" alt="Motive Homecare Logo" class="auth__logo-img">
                 </div>
                 
-                <h2 class="login__title">Login</h2>
+                <h2 class="auth__title">Login</h2>
                 
-                <form id="loginForm" class="login__form">
-                    <div class="login__form-group" id="usernameGroup">
-                        <label for="username" class="login__label">
-                            <i class="fas fa-user"></i>
+                <form id="loginForm" class="auth__form">
+                    <div class="auth__form-group" id="usernameGroup">
+                        <label for="username" class="auth__label">
+                            <i class="fas fa-user auth__label-icon"></i>
                             Username
                         </label>
-                        <div class="login__input-wrapper">
-                            <input type="text" id="username" name="username" class="login__input" placeholder="Enter your username" required>
+                        <div class="auth__input-wrapper">
+                            <input type="text" id="username" name="username" class="auth__input" placeholder="Enter your username" required>
                         </div>
-                        <div class="login__error-message">Please enter a valid username</div>
+                        <div class="auth__error-message">Please enter a valid username</div>
                     </div>
                     
-                    <div class="login__form-group" id="passwordGroup">
-                        <label for="password" class="login__label">
-                            <i class="fas fa-lock"></i>
+                    <div class="auth__form-group" id="passwordGroup">
+                        <label for="password" class="auth__label">
+                            <i class="fas fa-lock auth__label-icon"></i>
                             Password
                         </label>
-                        <div class="login__input-wrapper">
-                            <input type="password" id="password" name="password" class="login__input" placeholder="Enter your password" required>
+                        <div class="auth__input-wrapper">
+                            <input type="password" id="password" name="password" class="auth__input" placeholder="Enter your password" required>
                         </div>
-                        <div class="login__error-message">Please enter a valid password</div>
+                        <div class="auth__error-message">Please enter a valid password</div>
                     </div>
                     
-                    <button type="submit" class="login__button">LOG IN</button>
+                    <button type="submit" class="auth__button">LOG IN</button>
                 </form>
                 
-                <div class="login__extra-links">
-                    <a href="#" class="login__link" id="forgotPasswordLink">Forgot your password?</a> | <a href="#" class="login__link" id="contactLink">Contact Us</a>
+                <div class="auth__links">
+                    <a href="#" class="auth__link" id="forgotPasswordLink">Forgot your password?</a> | <a href="#" class="auth__link" id="contactLink">Contact Us</a>
                 </div>
             </div>
             
             <!-- Parte trasera (recuperación de contraseña) -->
-            <div class="login-card__back" id="passwordRecoveryCard">
-                <div class="login__logo">
-                    <img src="./IMG/32A90059-EE8B-4689-A398-D08AC03A1AC6.jpeg" alt="Motive Homecare Logo" class="login__logo-img">
+            <div class="auth__card-back" id="passwordRecoveryCard">
+                <div class="auth__logo">
+                    <img src="./IMG/32A90059-EE8B-4689-A398-D08AC03A1AC6.jpeg" alt="Motive Homecare Logo" class="auth__logo-img">
                 </div>
                 
-                <h2 class="login__title">Password Recovery</h2>
-                <p class="password-recovery__text">Enter your email address below and we'll send you instructions to reset your password.</p>
+                <h2 class="auth__title">Password Recovery</h2>
+                <p class="auth__text">Enter your email address below and we'll send you instructions to reset your password.</p>
                 
-                <form id="passwordRecoveryForm" class="login__form">
-                    <div class="login__form-group">
-                        <label for="recovery-email" class="login__label">
-                            <i class="fas fa-envelope"></i>
+                <form id="passwordRecoveryForm" class="auth__form">
+                    <div class="auth__form-group">
+                        <label for="recovery-email" class="auth__label">
+                            <i class="fas fa-envelope auth__label-icon"></i>
                             Email Address
                         </label>
-                        <div class="login__input-wrapper">
-                            <input type="email" id="recovery-email" class="login__input" placeholder="Enter your email" required>
+                        <div class="auth__input-wrapper">
+                            <input type="email" id="recovery-email" class="auth__input" placeholder="Enter your email" required>
                         </div>
                     </div>
                     
-                    <button type="submit" class="login__button">SEND RESET LINK</button>
+                    <button type="submit" class="auth__button">SEND RESET LINK</button>
                 </form>
                 
-                <div class="login__extra-links">
-                    <a class="login__link" id="backToLoginFromRecovery">
-                        <i class="fas fa-arrow-left"></i> Back to Login
+                <div class="auth__links">
+                    <a class="auth__link" id="backToLoginFromRecovery">
+                        <i class="fas fa-arrow-left auth__link-icon"></i> Back to Login
                     </a>
                 </div>
             </div>
             
             <!-- Parte trasera para contacto -->
-            <div class="login-card__back" id="contactCard" style="display: none;">
-                <div class="login__logo">
-                    <img src="./IMG/32A90059-EE8B-4689-A398-D08AC03A1AC6.jpeg" alt="Motive Homecare Logo" class="login__logo-img">
+            <div class="auth__card-back" id="contactCard" style="display: none;">
+                <div class="auth__logo">
+                    <img src="./IMG/32A90059-EE8B-4689-A398-D08AC03A1AC6.jpeg" alt="Motive Homecare Logo" class="auth__logo-img">
                 </div>
                 
-                <h2 class="login__title">Contact Us</h2>
-                <p class="password-recovery__text">
+                <h2 class="auth__title">Contact Us</h2>
+                <p class="auth__text">
                     Need assistance? Contact us directly at:
-                    <a href="mailto:ContactSupportJG@gmail.com" class="contact-email"><i class="fas fa-envelope"></i> ContactSupportJG@gmail.com</a>
+                    <a href="mailto:ContactSupportJG@gmail.com" class="auth__email"><i class="fas fa-envelope auth__email-icon"></i> ContactSupportJG@gmail.com</a>
                 </p>
                 
-                <form id="contactForm" class="login__form">
-                    <div class="login__form-group">
-                        <label for="contact-name" class="login__label">
-                            <i class="fas fa-user"></i>
+                <form id="contactForm" class="auth__form">
+                    <div class="auth__form-group">
+                        <label for="contact-name" class="auth__label">
+                            <i class="fas fa-user auth__label-icon"></i>
                             Your Name
                         </label>
-                        <div class="login__input-wrapper">
-                            <input type="text" id="contact-name" class="login__input" placeholder="Enter your name" required>
+                        <div class="auth__input-wrapper">
+                            <input type="text" id="contact-name" class="auth__input" placeholder="Enter your name" required>
                         </div>
                     </div>
                     
-                    <div class="login__form-group">
-                        <label for="contact-email" class="login__label">
-                            <i class="fas fa-envelope"></i>
+                    <div class="auth__form-group">
+                        <label for="contact-email" class="auth__label">
+                            <i class="fas fa-envelope auth__label-icon"></i>
                             Your Email
                         </label>
-                        <div class="login__input-wrapper">
-                            <input type="email" id="contact-email" class="login__input" placeholder="Enter your email" required>
+                        <div class="auth__input-wrapper">
+                            <input type="email" id="contact-email" class="auth__input" placeholder="Enter your email" required>
                         </div>
                     </div>
                     
-                    <div class="login__form-group">
-                        <label for="contact-message" class="login__label">
-                            <i class="fas fa-comment"></i>
+                    <div class="auth__form-group">
+                        <label for="contact-message" class="auth__label">
+                            <i class="fas fa-comment auth__label-icon"></i>
                             Message
                         </label>
-                        <div class="login__input-wrapper">
-                            <textarea id="contact-message" class="login__input login__textarea" placeholder="Enter your message" required></textarea>
+                        <div class="auth__input-wrapper">
+                            <textarea id="contact-message" class="auth__input auth__input--textarea" placeholder="Enter your message" required></textarea>
                         </div>
                     </div>
                     
-                    <button type="submit" class="login__button">SEND MESSAGE</button>
+                    <button type="submit" class="auth__button">SEND MESSAGE</button>
                 </form>
                 
-                <div class="login__extra-links">
-                    <a class="login__link" id="backToLoginFromContact">
-                        <i class="fas fa-arrow-left"></i> Back to Login
+                <div class="auth__links">
+                    <a class="auth__link" id="backToLoginFromContact">
+                        <i class="fas fa-arrow-left auth__link-icon"></i> Back to Login
                     </a>
                 </div>
             </div>
@@ -139,4 +139,3 @@
     <script src="./JS/Login.js"></script>
 </body>
 </html>
-

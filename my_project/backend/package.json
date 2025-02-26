@@ -1,7 +1,8 @@
 {
-  "name": "backend",
+  "name": "IA-22",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://jluisng.github.io/IA-22/",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
